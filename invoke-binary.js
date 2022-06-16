@@ -7,7 +7,7 @@ function chooseBinary() {
 
   // ...
   if (platform === "linux" && arch === "x64") {
-    return `test-action-linux-amd64-f9102f4412721291e7d6d101b95d2ff4add38bb7`;
+    return `test-action-linux-amd64-d0b7de33aefeda138fc141ae735664084c0dc744`;
   }
   // ...
 }
