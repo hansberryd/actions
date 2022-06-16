@@ -1,0 +1,17 @@
+name: Publish Action for consumption
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  package_action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bump version and push tag # Reference: https://github.com/marketplace/actions/github-tag-bump
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          INITIAL_VERSION: 0.0.0
+          DEFAULT_BUMP: minor
