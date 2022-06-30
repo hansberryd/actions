@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `hello-action-linux-amd64-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
+    return `hello-action-linux-amd64-57bfec453022d4c4f24f421039df0c00b0d04a3b`;
   } else if (platform === "linux" && arch === "386") {
-    return `hello-action-linux-386-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
+    return `hello-action-linux-386-57bfec453022d4c4f24f421039df0c00b0d04a3b`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `hello-action-darwin-amd64-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
+    return `hello-action-darwin-amd64-57bfec453022d4c4f24f421039df0c00b0d04a3b`;
   } else if (platform === "windows" && arch === "x64") {
-    return `hello-action-windows-amd64-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
+    return `hello-action-windows-amd64-57bfec453022d4c4f24f421039df0c00b0d04a3b`;
   } else if (platform === "windows" && arch === "386") {
-    return `hello-action-windows-386-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
+    return `hello-action-windows-386-57bfec453022d4c4f24f421039df0c00b0d04a3b`;
   }
   // ...
 }
