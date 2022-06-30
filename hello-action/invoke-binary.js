@@ -14,22 +14,21 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `hello-action-linux-amd64-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
+    return `hello-action-linux-amd64-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
   } else if (platform === "linux" && arch === "386") {
-    return `hello-action-linux-386-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
+    return `hello-action-linux-386-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `hello-action-darwin-amd64-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
+    return `hello-action-darwin-amd64-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
   } else if (platform === "windows" && arch === "x64") {
-    return `hello-action-windows-amd64-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
+    return `hello-action-windows-amd64-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
   } else if (platform === "windows" && arch === "386") {
-    return `hello-action-windows-386-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
+    return `hello-action-windows-386-858a79f21585c35f4b82f0b44db29e0d8c3fb46a`;
   }
   // ...
 }
 
 const binary = chooseBinary();
 const mainScript = `${__dirname}/${binary}`;
-console.log(`${__dirname}/${binary}`);
 const spawnSyncReturns = child_process.spawnSync(mainScript, {
   stdio: "inherit",
 });
