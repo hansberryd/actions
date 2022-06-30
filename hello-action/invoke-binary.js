@@ -14,21 +14,22 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `hello-action-linux-amd64-90192639dd87140ca58c11b7cc21b674b12b114a`;
+    return `hello-action-linux-amd64-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
   } else if (platform === "linux" && arch === "386") {
-    return `hello-action-linux-386-90192639dd87140ca58c11b7cc21b674b12b114a`;
+    return `hello-action-linux-386-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `hello-action-darwin-amd64-90192639dd87140ca58c11b7cc21b674b12b114a`;
+    return `hello-action-darwin-amd64-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
   } else if (platform === "windows" && arch === "x64") {
-    return `hello-action-windows-amd64-90192639dd87140ca58c11b7cc21b674b12b114a`;
+    return `hello-action-windows-amd64-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
   } else if (platform === "windows" && arch === "386") {
-    return `hello-action-windows-386-90192639dd87140ca58c11b7cc21b674b12b114a`;
+    return `hello-action-windows-386-ed9b7b7636049c478adabdd891affeba2ed1f95f`;
   }
   // ...
 }
 
 const binary = chooseBinary();
 const mainScript = `${__dirname}/${binary}`;
+console.log(`${__dirname}/${binary}`);
 const spawnSyncReturns = child_process.spawnSync(mainScript, {
   stdio: "inherit",
 });
