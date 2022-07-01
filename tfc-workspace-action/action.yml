@@ -1,7 +1,7 @@
 name: List workspaces
 description: "List the workspaces in this Terraform Cloud Organization"
 inputs:
-  organization_name: # Terraform Cloud organization id
+  organization: # Terraform Cloud organization id
     description: "This is the name of your Terraform Cloud Organization"
     required: true
     default: "flight-centre"
