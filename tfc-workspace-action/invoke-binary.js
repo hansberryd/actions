@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `hello-action-linux-amd64-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
+    return `tfc-workspace-action-linux-amd64-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
   } else if (platform === "linux" && arch === "386") {
-    return `hello-action-linux-386-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
+    return `tfc-workspace-action-linux-386-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `hello-action-darwin-amd64-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
+    return `tfc-workspace-action-darwin-amd64-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
   } else if (platform === "windows" && arch === "x64") {
-    return `hello-action-windows-amd64-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
+    return `tfc-workspace-action-windows-amd64-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
   } else if (platform === "windows" && arch === "386") {
-    return `hello-action-windows-386-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
+    return `tfc-workspace-action-windows-386-0c44fced5b0134c605fe4214c2e045b9eb39ef69`;
   }
   // ...
 }

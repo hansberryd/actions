@@ -1,0 +1,14 @@
+name: List workspaces
+description: "List the workspaces in this Terraform Cloud Organization"
+inputs:
+  organization_name: # Terraform Cloud organization id
+    description: "This is the name of your Terraform Cloud Organization"
+    required: true
+    default: "flight-centre"
+  token: # Token issued from TFC
+    description: "Generated token for an org, team or user"
+    required: true
+
+runs:
+  using: node16
+  main: invoke-binary.js
