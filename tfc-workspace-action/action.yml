@@ -8,6 +8,9 @@ inputs:
   token: # Token issued from TFC
     description: "Generated token for an org, team or user"
     required: true
+  searchworkspace: # search parameter that can be applied to filter the result list
+    description: "Add a search string here to filter your returned workspace list"
+    required: false
 
 runs:
   using: node16
