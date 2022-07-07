@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `tfc-workspace-action-linux-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
+    return `tar-gzip-repo-action-linux-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "linux" && arch === "386") {
-    return `tfc-workspace-action-linux-386-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
+    return `tar-gzip-repo-action-linux-386-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `tfc-workspace-action-darwin-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
+    return `tar-gzip-repo-action-darwin-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "windows" && arch === "x64") {
-    return `tfc-workspace-action-windows-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
+    return `tar-gzip-repo-action-windows-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "windows" && arch === "386") {
-    return `tfc-workspace-action-windows-386-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
+    return `tar-gzip-repo-action-windows-386-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   }
   // ...
 }

@@ -1,0 +1,16 @@
+name: Archive and compress checked out git repo
+description: "This action compresses and archives a git repo to tar.gz"
+inputs:
+  checked-out-repo:
+    description: "Provide the path that the repo has been checked out to using the v3 of actions/checkout"
+    required: true
+  archive-name:
+    description: "Provide the name of the archive"
+    required: false
+outputs:
+  archive:
+    description: "Returns the directory as a tar.gz file"
+
+runs:
+  using: node16
+  main: invoke-binary.js

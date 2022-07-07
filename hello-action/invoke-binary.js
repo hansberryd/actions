@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `hello-action-linux-amd64-7b29b9d933ce766e25820da202053be232cb87f6`;
+    return `hello-action-linux-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "linux" && arch === "386") {
-    return `hello-action-linux-386-7b29b9d933ce766e25820da202053be232cb87f6`;
+    return `hello-action-linux-386-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `hello-action-darwin-amd64-7b29b9d933ce766e25820da202053be232cb87f6`;
+    return `hello-action-darwin-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "windows" && arch === "x64") {
-    return `hello-action-windows-amd64-7b29b9d933ce766e25820da202053be232cb87f6`;
+    return `hello-action-windows-amd64-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   } else if (platform === "windows" && arch === "386") {
-    return `hello-action-windows-386-7b29b9d933ce766e25820da202053be232cb87f6`;
+    return `hello-action-windows-386-a968a9cf0eedd4d101650b473c392d530c4bd1d1`;
   }
   // ...
 }
