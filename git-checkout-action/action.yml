@@ -1,0 +1,19 @@
+name: Clone repo
+description: "This action uses go-git to clone a git repository"
+inputs:
+  github-url:
+    description: "The GH repository you want to clone."
+    required: true
+  target-directory:
+    description: "The target directory you want to clone into."
+    required: true
+  token:
+    description: "A GH PAT that must be in the repo's secrets." # will change to use SSH at some point.
+    required: true
+  branch:
+    description: "The branch name to be cloned."
+    required: true
+
+runs:
+  using: node16
+  main: invoke-binary.js

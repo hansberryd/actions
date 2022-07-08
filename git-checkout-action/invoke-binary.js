@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `tfc-workspace-action-linux-amd64-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
+    return `git-checkout-action-linux-amd64-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
   } else if (platform === "linux" && arch === "386") {
-    return `tfc-workspace-action-linux-386-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
+    return `git-checkout-action-linux-386-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `tfc-workspace-action-darwin-amd64-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
+    return `git-checkout-action-darwin-amd64-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
   } else if (platform === "windows" && arch === "x64") {
-    return `tfc-workspace-action-windows-amd64-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
+    return `git-checkout-action-windows-amd64-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
   } else if (platform === "windows" && arch === "386") {
-    return `tfc-workspace-action-windows-386-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
+    return `git-checkout-action-windows-386-59ae506d27a2364d8e3e7c3e26beff19a393ddb6`;
   }
   // ...
 }
