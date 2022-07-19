@@ -4,12 +4,14 @@ inputs:
   organization: # Terraform Cloud organization id
     description: "This is the name of your Terraform Cloud Organization"
     required: true
-    default: "flight-centre"
   token: # Token issued from TFC
     description: "Generated token for an org, team or user"
     required: true
   workspace: # workspace name to be created
     description: "This is what you want to name your workspace, typically it will be suffuxed with the target environment (e.g. qa, prd etc)"
+    required: true
+  terraformversion: # workspace name to be created
+    description: "Provide the Terraform version you wish to work with."
     required: true
 outputs:
   workspaceID:

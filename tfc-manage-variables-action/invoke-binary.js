@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `tar-gzip-repo-action-linux-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-variables-action-linux-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
   } else if (platform === "linux" && arch === "386") {
-    return `tar-gzip-repo-action-linux-386-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-variables-action-linux-386-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `tar-gzip-repo-action-darwin-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-variables-action-darwin-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
   } else if (platform === "windows" && arch === "x64") {
-    return `tar-gzip-repo-action-windows-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-variables-action-windows-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
   } else if (platform === "windows" && arch === "386") {
-    return `tar-gzip-repo-action-windows-386-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-variables-action-windows-386-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
   }
   // ...
 }
