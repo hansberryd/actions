@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `tfc-manage-workspace-action-linux-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-workspace-action-linux-amd64-ff9cf78d1241b6444cea069ae0c719d4874dcfec`;
   } else if (platform === "linux" && arch === "386") {
-    return `tfc-manage-workspace-action-linux-386-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-workspace-action-linux-386-ff9cf78d1241b6444cea069ae0c719d4874dcfec`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `tfc-manage-workspace-action-darwin-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-workspace-action-darwin-amd64-ff9cf78d1241b6444cea069ae0c719d4874dcfec`;
   } else if (platform === "windows" && arch === "x64") {
-    return `tfc-manage-workspace-action-windows-amd64-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-workspace-action-windows-amd64-ff9cf78d1241b6444cea069ae0c719d4874dcfec`;
   } else if (platform === "windows" && arch === "386") {
-    return `tfc-manage-workspace-action-windows-386-0d303fe6fcac4bd97334715e3d3cba658fa16ae1`;
+    return `tfc-manage-workspace-action-windows-386-ff9cf78d1241b6444cea069ae0c719d4874dcfec`;
   }
   // ...
 }
