@@ -14,15 +14,15 @@ function chooseBinary() {
         "and identified architecture is: " +
         arch
     );
-    return `git-checkout-action-linux-amd64-9b317170490ce70f05caed33ab0259105db745be`;
+    return `git-checkout-action-linux-amd64-71e7a0f27c3192d7f62d104006dbfdadbad9492e`;
   } else if (platform === "linux" && arch === "386") {
-    return `git-checkout-action-linux-386-9b317170490ce70f05caed33ab0259105db745be`;
+    return `git-checkout-action-linux-386-71e7a0f27c3192d7f62d104006dbfdadbad9492e`;
   } else if (platform === "darwin" && arch === "x64") {
-    return `git-checkout-action-darwin-amd64-9b317170490ce70f05caed33ab0259105db745be`;
+    return `git-checkout-action-darwin-amd64-71e7a0f27c3192d7f62d104006dbfdadbad9492e`;
   } else if (platform === "windows" && arch === "x64") {
-    return `git-checkout-action-windows-amd64-9b317170490ce70f05caed33ab0259105db745be`;
+    return `git-checkout-action-windows-amd64-71e7a0f27c3192d7f62d104006dbfdadbad9492e`;
   } else if (platform === "windows" && arch === "386") {
-    return `git-checkout-action-windows-386-9b317170490ce70f05caed33ab0259105db745be`;
+    return `git-checkout-action-windows-386-71e7a0f27c3192d7f62d104006dbfdadbad9492e`;
   }
   // ...
 }
