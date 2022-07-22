@@ -1,0 +1,25 @@
+name: Configuration Version
+description: "Create a configuration version and upload archived terraform files."
+inputs:
+  workspaceID:
+    description: "This is the workspace ID in Terraform Cloud"
+    required: true
+  token: # Token issued from TFC
+    description: "Generated token for an org, team or user"
+    required: true
+  createNewConfigVersion: # This file contains a JSON structure of the variables for a given workspace
+    description: "Boolean value to toggle the ability to create a config version or not."
+    required: true
+  autoQueueRun:
+    description: "Booelan value to indicate whether the automatically queue the run or not."
+    required: true
+  speculative:
+    description: "Boolean value to choose whether you want to perform a speculative run before committing to a comprehensive run"
+    required: true
+outputs:
+  configVersionID:
+    description: "Returns the configuartion version ID for the new config version."
+
+runs:
+  using: node16
+  main: invoke-binary.js

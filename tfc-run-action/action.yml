@@ -1,0 +1,19 @@
+name: Trigger Run for Workspace
+description: "This action triggers a run for the workspace being deployed in Terraform Cloud"
+inputs:
+  workspace:
+    description: "This is the workspace name which has been passed from the initial input of the tfc-manage-workspace-action"
+    required: true
+  token: # Token issued from TFC
+    description: "Generated token for an org, team or user"
+    required: true
+  organization:
+    description: "The name of the organization we are working in, this is also passed from one of the inputs from the tfc-manage-workspace-action"
+    required: true
+outputs:
+  configVersionID:
+    description: "Returns the configuartion version ID for the new config version."
+
+runs:
+  using: node16
+  main: invoke-binary.js

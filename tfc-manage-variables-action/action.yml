@@ -1,0 +1,19 @@
+name: Manage variables
+description: "Manage variables for a given workspace"
+inputs:
+  workspaceID:
+    description: "This is the workspace ID in Terraform Cloud"
+    required: true
+  token: # Token issued from TFC
+    description: "Generated token for an org, team or user"
+    required: true
+  jsonfilelocation: # This file contains a JSON structure of the variables for a given workspace
+    description: "Add the location of the JSON file containing the variables to be created or updated"
+    required: false
+#outputs:
+#  workspaces:
+#    description: "Returns a list of workspaces for the organization"
+
+runs:
+  using: node16
+  main: invoke-binary.js
