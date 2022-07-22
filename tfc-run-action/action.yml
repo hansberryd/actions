@@ -7,12 +7,12 @@ inputs:
   token: # Token issued from TFC
     description: "Generated token for an org, team or user"
     required: true
+  configVersionID:
+    description: "The configuration version created from the tfc-config-version-action"
+    required: true
   organization:
     description: "The name of the organization we are working in, this is also passed from one of the inputs from the tfc-manage-workspace-action"
     required: true
-outputs:
-  configVersionID:
-    description: "Returns the configuartion version ID for the new config version."
 
 runs:
   using: node16
